@@ -2,7 +2,7 @@
 
 IPC360 기반의 IP 카메라 공격을 성공했고, 이에 대한 분석 환경 구축과 취약점, 취약점 공격에 대해 소개한다.
 
-![image](https://user-images.githubusercontent.com/39231485/144426364-9c05d118-6d3c-4d73-a8fc-4dfb044376bb.png)
+![image](https://user-images.githubusercontent.com/39231485/144426439-68fecb3e-1711-4f7f-bf85-cd6836ca1ebb.png)
 
 타겟으로 할 IP 카메라를 구경하던 중, 위 이미지에 적힌 문구를 보고 해킹 욕구를 참을 수 없었다.
 
