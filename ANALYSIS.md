@@ -69,7 +69,7 @@ while True :
 
 읽은 펌웨어를 binwalk에 돌려보니 파일시스템이 잘 뽑히는 것을 확인할 수 있었다.
 
-<img src="https://user-images.githubusercontent.com/39231485/144436560-cb7071d4-f649-4fcc-a8da-1c510859eca6.jpg" width="100%">
+<img src="https://user-images.githubusercontent.com/39231485/144436560-cb7071d4-f649-4fcc-a8da-1c510859eca6.jpg" width="40%">
 
 혹시 모르니 위에 보이는 flash에 ic 후크 클립으로 라즈베리파이와 연결하여 spi 인터페이스로 flash 데이터를 직접적으로 읽어줬다.
 
@@ -107,6 +107,9 @@ qemu-system-mipsel -M malta -kernel $KERNEL -hda $DISK -append "root=/dev/sda1" 
 
 이 이후에 해당 qemu 안에 `squashfs-root` 파일시스템을 넣어주고 chroot . ./bin/sh로 해당 파일시스템의 쉘에 접속하였다.
 ip 카메라의 서비스를 제공하는 바이너리인 `Alloca`를 실행시켜보니 아래와 같은 에러가 발생했다.
+
+![image](https://user-images.githubusercontent.com/39231485/144738887-3b55c567-b0b9-40d3-a78f-3a78c3c95e0e.png)
+
 
 이를 고쳐주기 위해 `Binary Patch`와 `LD_PRELOAD`를 사용해 main 함수를 덮어 프로그램을 컨트롤 하려 했지만 결국에 해내지 못했다.
 
