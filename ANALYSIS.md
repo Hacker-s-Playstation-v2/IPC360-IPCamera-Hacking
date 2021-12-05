@@ -69,7 +69,7 @@ while True :
 
 읽은 펌웨어를 binwalk에 돌려보니 파일시스템이 잘 뽑히는 것을 확인할 수 있었다.
 
-![KakaoTalk_20211202_230054559](https://user-images.githubusercontent.com/39231485/144436560-cb7071d4-f649-4fcc-a8da-1c510859eca6.jpg)
+<img src="https://user-images.githubusercontent.com/39231485/144436560-cb7071d4-f649-4fcc-a8da-1c510859eca6.jpg" width="100%">
 
 혹시 모르니 위에 보이는 flash에 ic 후크 클립으로 라즈베리파이와 연결하여 spi 인터페이스로 flash 데이터를 직접적으로 읽어줬다.
 
